@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>394</width>
+    <height>303</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTableView" name="tableData">
+      <property name="editTriggers">
+       <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="textElideMode">
+       <enum>Qt::ElideRight</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>394</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Add</string>
+    </property>
+    <addaction name="actionHuman"/>
+    <addaction name="actionSponsor"/>
+   </widget>
+   <widget class="QMenu" name="menuShow">
+    <property name="title">
+     <string>Show</string>
+    </property>
+    <addaction name="actionAll_people"/>
+    <addaction name="actionGroup"/>
+    <addaction name="actionSponsors"/>
+    <addaction name="actionSponsor_s_pays"/>
+    <addaction name="actionPays_for_human"/>
+    <addaction name="actionBank"/>
+   </widget>
+   <widget class="QMenu" name="menuPay">
+    <property name="title">
+     <string>Pay</string>
+    </property>
+    <addaction name="actionFrom_sponsor"/>
+    <addaction name="actionFor_human"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuShow"/>
+   <addaction name="menuPay"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionHuman">
+   <property name="text">
+    <string>Human</string>
+   </property>
+  </action>
+  <action name="actionSponsor">
+   <property name="text">
+    <string>Sponsor</string>
+   </property>
+  </action>
+  <action name="actionAll_people">
+   <property name="text">
+    <string>All people</string>
+   </property>
+  </action>
+  <action name="actionGroup">
+   <property name="text">
+    <string>Group</string>
+   </property>
+  </action>
+  <action name="actionSponsors">
+   <property name="text">
+    <string>Sponsors</string>
+   </property>
+  </action>
+  <action name="actionSponsor_s_pays">
+   <property name="text">
+    <string>Sponsor's pays</string>
+   </property>
+  </action>
+  <action name="actionPays_for_human">
+   <property name="text">
+    <string>Pays for human</string>
+   </property>
+  </action>
+  <action name="actionBank">
+   <property name="text">
+    <string>Bank</string>
+   </property>
+  </action>
+  <action name="actionFrom_sponsor">
+   <property name="text">
+    <string>From sponsor</string>
+   </property>
+  </action>
+  <action name="actionFor_human">
+   <property name="text">
+    <string>For human</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
